@@ -27,8 +27,9 @@ Proyecto que consiste en mi portafolio web creado con HTML% y CSS3, con el objet
 -Archivo CSS en el cual se trabaja con flex y grid, una normalizacion y un reset para definir colores generales de la pagina.
 -Diseño responsive con mediaquery y en partes de la pagina animaciones y transiciones. 
 
-
-![sobremi](https://github.com/user-attachments/assets/b49bfe71-5018-4279-a5c4-4c27e43c154b)
-![proyectos](https://github.com/user-attachments/assets/8461b638-a5c4-4c28-b163-03ace0dfc560)
 ![Hero](https://github.com/user-attachments/assets/627a7365-ebb7-47e0-a410-447e69452fe7)
+![proyectos](https://github.com/user-attachments/assets/8461b638-a5c4-4c28-b163-03ace0dfc560)
+![sobremi](https://github.com/user-attachments/assets/b49bfe71-5018-4279-a5c4-4c27e43c154b)
+
+
 
