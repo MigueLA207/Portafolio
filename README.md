@@ -27,5 +27,5 @@ Proyecto que consiste en mi portafolio web creado con HTML% y CSS3, con el objet
 -Archivo CSS en el cual se trabaja con flex y grid, una normalizacion y un reset para definir colores generales de la pagina.
 -Diseño responsive con mediaquery y en partes de la pagina animaciones y transiciones. 
 
-![Hero del sitio web] (/imagenes/hero.png)
+![Hero del sitio web] (/imagenes/Hero.png)
 
