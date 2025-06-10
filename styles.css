@@ -225,7 +225,6 @@ header {
 
 /* About me */
 .about{
-    height: 50vh;
     background-color: var(--color-title) ;
     /* background-color: #4a5a1c; */
     /* background-color: #538736; */
@@ -253,7 +252,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 60%;
     gap: 20px;
     
 }
@@ -382,8 +381,12 @@ footer{
     
 }
 
-.about{
-    height: 75vh;
+    .nav__item{
+        font-size:1.1rem;
+    }
+
+    .h-info__title {
+    font-size: 2.2rem;
 }
 }
 
