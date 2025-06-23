@@ -15,6 +15,10 @@
     --color-hover-green: #50a63d;;
 }
 
+*,body,html {
+    scroll-behavior: smooth;
+}
+
 .bg-shadow{
     position: absolute;
     top: 0;
