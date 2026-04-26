@@ -1,116 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portafolio de Miguel Angel Arias Marin — Desarrollador de Software especializado en backend con Java, Python y HTML/CSS. Proyectos destacados y contacto profesional.">
+    <meta name="author" content="Miguel Angel Arias Marin">
+    <meta name="keywords" content="desarrollador, software, backend, Java, Python, HTML, CSS, portafolio">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Miguel Angel Arias Marin — Desarrollador de Software">
+    <meta property="og:description" content="Portafolio profesional con proyectos destacados en desarrollo web y backend.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miguela207.github.io/Portafolio/">
+    <meta property="og:image" content="https://miguela207.github.io/Portafolio/imagenes/Miguel_Photo.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Miguel Angel Arias Marin — Desarrollador de Software">
+    <meta name="twitter:description" content="Portafolio profesional con proyectos destacados en desarrollo web y backend.">
+
+    <title>Miguel Angel Arias Marin — Desarrollador de Software</title>
+
+    <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-    <section class="hero">
-        <div class="bg-shadow"></div>
-        <div class="hero__content">
-            <header>
-                <h1 class="header__title">Portafolio</h1>
-                <nav class="header__nav">
-                    <ul class="header__nav__list">
-                        <li><a href="#" class="nav__item">Inicio</a></li>
-                        <li><a href="#projects" class="nav__item">Proyectos</a></li>
-                        <li><a href="#about" class="nav__item">Sobre mi</a></li>
-                        <li><a href="#footer" class="nav__item">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="h-info">
-                <p class="h-info__subtitle">Desarrollador de Software</p>
-                <h2 class="h-info__title">Miguel Angel Arias</h2>
-                <nav class="h-info__nav">
-                    <li><a href="#projects" class="h-info__nav__item">Proyectos</a></li>
-                    <li><a href="#footer" class="h-info__nav__item nav__item--transparent">Contacto</a></li>
-                </nav>
-            </section>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="#inicio" class="header__logo" aria-label="Inicio - Miguel Arias">
+                <span class="header__logo-text">M.A.</span>
+            </a>
+
+            <!-- Hamburger Button (mobile only) -->
+            <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Desktop Nav -->
+            <nav class="header__nav header__nav--desktop" aria-label="Navegacion principal">
+                <ul class="header__nav-list">
+                    <li><a href="#inicio" class="header__nav-link">Inicio</a></li>
+                    <li><a href="#projects" class="header__nav-link">Proyectos</a></li>
+                    <li><a href="#about" class="header__nav-link">Sobre mi</a></li>
+                    <li><a href="#footer" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <main>
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <h2 class="project__title">Sobre mis proyectos</h2>
-            <p class="projects__text">Te presento mis proyectos destacados, paginas web hechas con la mejor calidad </p>
-            <section class="content-projects">
-                <section class="project__item">
-                    <h3 class="project__title">Evento de SOAD</h3>
-                    <img src="./imagenes/Evento.png" alt="" class="project__img">
-                    <p class="project__text">Pagina web realizada para la compañia brasileña 30e, hecha para promocionar la nueva gira de
-                        System of a down.</p>
-                    <a class="project__button" href="https://miguela207.github.io/Evento/" target="_blank">Ver</a>
-                </section>
-                <section class="project__item">
-                    <h3 class="project__title">Menu de panaderia</h3>
-                    <img src="./imagenes/menu.png" alt="" class="project__img">
-                    <p class="project__text">Pagina web realizadà para la panaderia dulce paladar, hecha para mostrar la carta de manera virtual a los clientes.</p>
-                    <a class="project__button" href="https://miguela207.github.io/MenuRestaurante/" target="_blank">Ver</a>
-                </section>
-                <section class="project__item">
-                    <h3 class="project__title">Login practica</h3>
-                    <img src="./imagenes/loginimage.png" alt="" class="project__img">
-                    <p class="project__text">Login realizado con html y css, primera practica del modulo con un diseño ochentero y atractivo usando flex.</p>
-                    <a class="project__button" href="https://miguela207.github.io/LoginHtmlCss/" target="_blank">Ver</a>
-                </section>
-                <section class="project__item">
-                    <h3 class="project__title">Pagina semantica</h3>
-                    <img src="./imagenes/htmlSemantico.png" alt="" class="project__img">
-                    <p class="project__text">Pagina web realizada para la practica de la semantica en html, 6 secciones en las cuales se evidenciara el uso correcto de las etiquetas.</p>
-                    <a class="project__button" href="https://miguela207.github.io/PaginaSemantica/index.html" target="_blank">Ver</a>
-                </section>
-            </section>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
+            <nav class="header__mobile-nav" aria-label="Navegacion mobile">
+                <ul class="header__mobile-nav-list">
+                    <li><a href="#inicio" class="header__mobile-nav-link" data-nav-link>Inicio</a></li>
+                    <li><a href="#projects" class="header__mobile-nav-link" data-nav-link>Proyectos</a></li>
+                    <li><a href="#about" class="header__mobile-nav-link" data-nav-link>Sobre mi</a></li>
+                    <li><a href="#footer" class="header__mobile-nav-link" data-nav-link>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio" aria-label="Presentacion">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <p class="hero__subtitle">Desarrollador de Software</p>
+                    <h1 class="hero__title">Miguel Angel<br>Arias Marin</h1>
+                    <p class="hero__description">
+                        Backend developer apasionado por la logica, la estructura y la optimizacion de sistemas. Construyendo soluciones con Java, Python y tecnologias web.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+                        <a href="#footer" class="btn btn--outline">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator" aria-hidden="true">
+                <span class="hero__scroll-line"></span>
+            </div>
         </section>
 
-        <!-- Section About me -->
-         <section class="about" id="about">
-            <h2 class="about__title">Sobre mi</h2>
-            <div class="about__main">
-            <img src="imagenes/Miguel_Photo.jpg" alt="" class="about__img">
-            <div class="about__content">
-                <p class="about__name">Miguel Angel Arias Marin</p>
-                <p class="about__profession">Riwi Developer</p>
-                <p class="about__info">Hola, soy Miguel Arias, un entusiasta desarrollador backend en camino de profesionalizarse. Estoy apasionado por la lógica, la estructura y la optimización de sistemas. Actualmente estoy aprendiendo Html5, CSS3, un poco de JavaScript y con mediano dominio sobre Java y Python .</p>
+        <!-- Skills Marquee -->
+        <section class="marquee-section" aria-label="Tecnologias">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span class="marquee-item">Java</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">HTML5</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">CSS3</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Git</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">SQL</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Backend</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item">Java</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Python</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">HTML5</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">CSS3</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Git</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">SQL</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                    <span class="marquee-item">Backend</span>
+                    <span class="marquee-sep" aria-hidden="true"></span>
+                </div>
             </div>
-         </section>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects" aria-label="Proyectos destacados">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Trabajo seleccionado</p>
+                    <h2 class="section-title">Sobre mis proyectos</h2>
+                    <p class="section-description">
+                        Te presento mis proyectos destacados, paginas web hechas con la mejor calidad.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 - Featured -->
+                    <article class="project-card project-card--featured" aria-label="Proyecto: Evento de SOAD">
+                        <div class="project-card__image-wrapper">
+                            <img src="./imagenes/Evento.png" alt="Pagina web del evento de System of a Down para la compania brasilea 30e" class="project-card__image" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Evento de SOAD</h3>
+                            <p class="project-card__description">
+                                Pagina web realizada para la compania brasilea 30e, hecha para promocionar la nueva gira de System of a Down.
+                            </p>
+                            <a class="project-card__button" href="https://miguela207.github.io/Evento/" target="_blank" rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" aria-label="Proyecto: Menu de panaderia">
+                        <div class="project-card__image-wrapper">
+                            <img src="./imagenes/menu.png" alt="Menu virtual de la panaderia Dulce Paladar mostrando la carta de productos" class="project-card__image" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Menu de panaderia</h3>
+                            <p class="project-card__description">
+                                Pagina web realizada para la panaderia Dulce Paladar, hecha para mostrar la carta de manera virtual a los clientes.
+                            </p>
+                            <a class="project-card__button" href="https://miguela207.github.io/MenuRestaurante/" target="_blank" rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" aria-label="Proyecto: Login practica">
+                        <div class="project-card__image-wrapper">
+                            <img src="./imagenes/loginimage.png" alt="Interfaz de login con diseno ochentero realizada con HTML y CSS" class="project-card__image" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Login practica</h3>
+                            <p class="project-card__description">
+                                Login realizado con HTML y CSS, primera practica del modulo con un diseno ochentero y atractivo usando Flexbox.
+                            </p>
+                            <a class="project-card__button" href="https://miguela207.github.io/LoginHtmlCss/" target="_blank" rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" aria-label="Proyecto: Pagina semantica">
+                        <div class="project-card__image-wrapper">
+                            <img src="./imagenes/htmlSemantico.png" alt="Pagina web semantica con 6 secciones demostrando el uso correcto de etiquetas HTML" class="project-card__image" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Pagina semantica</h3>
+                            <p class="project-card__description">
+                                Pagina web realizada para la practica de la semantica en HTML, 6 secciones en las cuales se evidencia el uso correcto de las etiquetas.
+                            </p>
+                            <a class="project-card__button" href="https://miguela207.github.io/PaginaSemantica/index.html" target="_blank" rel="noopener noreferrer">
+                                Ver proyecto
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-label="Sobre mi">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__image-wrapper">
+                        <div class="about__image-frame">
+                            <img src="imagenes/Miguel_Photo.jpg" alt="Foto de Miguel Angel Arias Marin, desarrollador de software" class="about__image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <p class="section-label">Conoceme</p>
+                        <h2 class="section-title about__title">Sobre mi</h2>
+                        <p class="about__name">Miguel Angel Arias Marin</p>
+                        <p class="about__profession">Riwi Developer</p>
+                        <p class="about__info">
+                            Hola, soy Miguel Arias, un entusiasta desarrollador backend en camino de profesionalizarse. Estoy apasionado por la logica, la estructura y la optimizacion de sistemas. Actualmente estoy aprendiendo HTML5, CSS3, un poco de JavaScript y con mediano dominio sobre Java y Python.
+                        </p>
+                        <div class="about__stats">
+                            <div class="stat">
+                                <span class="stat__number">4+</span>
+                                <span class="stat__label">Proyectos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">5+</span>
+                                <span class="stat__label">Tecnologias</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">100%</span>
+                                <span class="stat__label">Dedicacion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-label="Llamada a la accion">
+            <div class="container">
+                <h2 class="cta__title">Hablemos de tu proximo proyecto</h2>
+                <p class="cta__description">
+                    Estoy disponible para colaboraciones, proyectos freelance o posiciones de desarrollo backend.
+                </p>
+                <a href="https://wa.me/3135940559" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
     </main>
 
-
-     <footer id="footer">
-        <section class="footer__container">
-            <section class="footer__networks">
-
-                <a href="https://es-la.facebook.com/people/Miguel-Arias/pfbid02SjVfyiPVTRaYY5KQ1Ab6hYiY6eaokzH1N5Kxf2pApFREXZT6MjzGo4pyPfhenGfol/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-
-                <a href="https://www.instagram.com/miguelariass/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-                <a href="https://github.com/MigueLA207" target="_blank"><i class="fa-brands fa-github"></i></a>
-                
-                <a href="https://wa.me/3135940559" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </section>
-            <section class="footer__nav">
-                <ul>
-                    <li><a href="#inicio">Home</a></li>
-
-                    <li><a href="https://indiehoy.com/noticias/system-of-a-down-en-sudamerica-setlist-y-sorpresas-de-los-primeros-shows/" target="_blank">News</a></li>
-
-                    <li><a href="#about">About</a></li>
-
-                </ul>
-            </section>
-        </section>
-        <section class="footer_bottom">
-            <p>Copyright &copy; 2025; Designed by <span class="designer">Miguelito Arias</span></p>
-        </section>
+    <!-- Footer -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__logo">M.A.</span>
+                    <p class="footer__tagline">Desarrollador de Software</p>
+                </div>
+                <nav class="footer__nav" aria-label="Navegacion del footer">
+                    <ul class="footer__nav-list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#about">Sobre mi</a></li>
+                        <li><a href="https://indiehoy.com/noticias/system-of-a-down-en-sudamerica-setlist-y-sorpresas-de-los-primeros-shows/" target="_blank" rel="noopener noreferrer">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__social">
+                <a href="https://es-la.facebook.com/people/Miguel-Arias/pfbid02SjVfyiPVTRaYY5KQ1Ab6hYiY6eaokzH1N5Kxf2pApFREXZT6MjzGo4pyPfhenGfol/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Miguel Arias">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/miguelariass/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Miguel Arias">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/MigueLA207" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Miguel Arias">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/3135940559" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Miguel Arias">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>Copyright &copy; 2025. Disenado por <span class="designer">Miguel Arias</span></p>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <!-- Minimal JS: hamburger toggle + smooth scroll + scroll animations -->
+    <script>
+        (function () {
+            'use strict';
+
+            // ── Hamburger Toggle ────────────────────────────────────
+            const hamburger = document.querySelector('.header__hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('[data-nav-link]');
+
+            function openMenu() {
+                hamburger.setAttribute('aria-expanded', 'true');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+                mobileMenu.classList.add('header__mobile-menu--open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                hamburger.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                mobileMenu.classList.remove('header__mobile-menu--open');
+                document.body.style.overflow = '';
+            }
+
+            hamburger.addEventListener('click', function () {
+                const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+                isOpen ? closeMenu() : openMenu();
+            });
+
+            // Close menu when a link is clicked
+            mobileLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    closeMenu();
+                });
+            });
+
+            // Close menu on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('header__mobile-menu--open')) {
+                    closeMenu();
+                    hamburger.focus();
+                }
+            });
+
+            // ── Smooth Scroll with offset for fixed header ──────────
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (!target) return;
+
+                    e.preventDefault();
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // ── Scroll-Driven Reveal Animations ─────────────────────
+            // Fallback for browsers without animation-timeline support
+            if (!CSS.supports('animation-timeline', 'view()')) {
+                const revealElements = document.querySelectorAll(
+                    '.project-card, .section-header, .about__grid, .cta, .marquee-section'
+                );
+
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('reveal--visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.15,
+                    rootMargin: '0px 0px -60px 0px'
+                });
+
+                revealElements.forEach(function (el) {
+                    el.classList.add('reveal');
+                    observer.observe(el);
+                });
+
+                // Stagger project cards
+                const cards = document.querySelectorAll('.project-card');
+                cards.forEach(function (card, i) {
+                    card.style.transitionDelay = (i * 0.12) + 's';
+                });
+            }
+        })();
+    </script>
+</body>
 </html>
